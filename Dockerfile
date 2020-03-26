@@ -1,5 +1,6 @@
 FROM yangxiaofeng/ambari-base:latest
 MAINTAINER Breeze
+RUN yum install -y rpm-build && yum install -y gcc-c++ 
 RUN mvn versions:set -DnewVersion=2.7.5.0.0 \
     && pushd ambari-metrics \
     && mvn versions:set -DnewVersion=2.7.5.0.0 \
