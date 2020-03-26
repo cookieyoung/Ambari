@@ -1,4 +1,5 @@
-FROM opennms/maven
+FROM opennms/maven:1.8.0.242.b08-3.6.3-b3863
+
 MAINTAINER Breeze
 
 RUN yum install epel-release -y && yum clean all
