@@ -1,4 +1,4 @@
-FROM opennms/maven:1.8.0.242.b08-3.6.3-b3863
+FROM indigo/centos-maven:latest
 
 MAINTAINER Breeze
 
