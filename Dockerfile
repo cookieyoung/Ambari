@@ -1,4 +1,4 @@
-FROM centos:7
+FROM opennms/maven
 MAINTAINER Breeze
 
 RUN yum install epel-release -y && yum clean all
