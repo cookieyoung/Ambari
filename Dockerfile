@@ -1,4 +1,4 @@
-FROM yangxiaofeng/ambari-base:latest
+FROM yangxiaofeng/ambari-base:0.1
 MAINTAINER Breeze
 RUN yum install -y git
 RUN yum install -y rpm-build && yum install -y gcc-c++ 
