@@ -4,7 +4,8 @@ RUN yum install -y git
 RUN yum install -y rpm-build && yum install -y gcc-c++ 
 RUN wget https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea \
     && sh setuptools-0.6c11-py2.7.egg \
-    && rm -f setuptools-0.6c11-py2.7.egg
+    && rm -f setuptools-0.6c11-py2.7.egg \
+    && yum install -y python-devel
 RUN mvn versions:set -DnewVersion=2.7.5.0.0 \
     && pushd ambari-metrics \
     && mvn versions:set -DnewVersion=2.7.5.0.0 \
