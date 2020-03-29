@@ -6,7 +6,7 @@ RUN yum install -y unzip \
     && unzip ambari-server-2.7.5.0-0.x86_64.rpm.zip
 RUN yum install -y ambari-server*.rpm \
     && ambari-server setup -s \
-    && ambari-server start
+    && ambari-server start -s
 EXPOSE 8080
 CMD ["/bin/bash"]
 
