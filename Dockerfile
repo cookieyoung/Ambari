@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Beeze
+MAINTAINER Beeze_Yang
 ADD https://github.com/cookieyoung/Ambari/releases/download/ambari-server.2.7.5/ambari-server-2.7.5.0-0.x86_64.rpm.zip /opt/
 WORKDIR /opt
 RUN yum install -y unzip \
